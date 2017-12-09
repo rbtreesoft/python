@@ -7,7 +7,9 @@ height_input=input("please enter your height:")
 ss = re.findall(r"\d+\.?\d*",height_input)
 
 if ss:
-	height_input = ss[0]
+	for i in ss:
+		if 0<float(i)<3:
+			height_input=i
 else:
 	print("input illegal")
 
@@ -18,7 +20,9 @@ weight_input=input("please enter your weight:")
 sss = re.findall(r"\d+\.?\d*",weight_input)
 
 if sss:
-	weight_input = sss[0]
+	for x in sss:
+		if 0<float(x)<200:
+			weight_input=x
 else:
 	print("input illegal")
 
