@@ -2,9 +2,13 @@
 # -*- coding: utf-8 -*-
 
 def main():
-	fo = open("sourcefile.txt","r")
+	infile = open("sourcefile.txt","r")
+	outfile = open("copiedfile.txt","w")
 	for line in fo:
-		print(line)
-	fo.close()
-
+            outfile.write(line)
+	outfile.close()
+	infile.close()
+	fo = open("copiedfile.txt","r")
+	print(fo.read())
+	
 main()
