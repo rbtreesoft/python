@@ -4,7 +4,7 @@
 def main():
 	infile = open("sourcefile.txt","r")
 	outfile = open("copiedfile.txt","w")
-	for line in fo:
+	for line in infile:
             outfile.write(line)
 	outfile.close()
 	infile.close()
